@@ -1,0 +1,166 @@
+:root {
+  --primario: #4fc3f7;
+  --secundario: #d1b902;
+  --gris: #ececec;
+  --blanco: #ffffff;
+  --oscuro: #263238;
+}
+
+.logo {
+  height: px;
+  width: auto;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--gris);
+  animation: fadeIn 2s ease-in;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--oscuro);
+}
+
+.navegacion {
+  background-color: var(--secundario);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navegacion a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.navegacion a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.producto {
+  background-color: var(--blanco);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  animation: fadeInImage 1s ease-in-out;
+}
+
+.animado {
+  animation: slideUp 1s ease;
+}
+
+#nosotros, #contacto {
+  background-color: var(--blanco);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tabla-contacto {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.tabla-contacto td {
+  padding: 10px;
+  border-bottom: 1px solid var(--gris);
+}
+
+.tabla-contacto input,
+.tabla-contacto textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton {
+  padding: 10px 20px;
+  background-color: var(--secundario);
+  color: var(--blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+----WATASP------
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.navegacion {
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+}
