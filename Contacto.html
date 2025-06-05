@@ -23,34 +23,40 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <table class="tabla-contacto" action="mailto:luisangelcheponce44@gmail.com" method="post">
-      <tr>
-        <td>Nombre:</td>
-        <td><input type="text" placeholder="Tu nombre" required></td>
-      </tr>
-      <tr>
-        <td>Correo:</td>
-        <td><input type="email" placeholder="Tu correo" required></td>
-      </tr>
-      <tr>
-        <td>Teléfono:</td>
-        <td><input type="tel" placeholder="Tu teléfono"></td>
-      </tr>
-      <tr>
-        <td>Mensaje:</td>
-        <td><textarea placeholder="Tu mensaje"></textarea></td>
-      </tr>
-      <tr>
-        <td colspan="2"><button type="submit" class="boton">Enviar</button></td>
-      </tr>
-    </table>
 
-    </div>
+    <!-- FORMULARIO FUNCIONAL -->
+    <form action="mailto:luisangelcheponce44@gmail.com" method="post" enctype="text/plain">
+      <table class="tabla-contacto">
+        <tr>
+          <td>Nombre:</td>
+          <td><input type="text" name="nombre" placeholder="Tu nombre" required></td>
+        </tr>
+        <tr>
+          <td>Correo:</td>
+          <td><input type="email" name="correo" placeholder="Tu correo" required></td>
+        </tr>
+        <tr>
+          <td>Teléfono:</td>
+          <td><input type="tel" name="telefono" placeholder="Tu teléfono"></td>
+        </tr>
+        <tr>
+          <td>Mensaje:</td>
+          <td><textarea name="mensaje" placeholder="Tu mensaje" required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit" class="boton">Enviar</button></td>
+        </tr>
+      </table>
+    </form>
+
+    <!-- ENLACE A WHATSAPP -->
+    <div>
       <a href="https://wa.me/50255381671" target="_blank" class="contact-link">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
         Contacto
       </a>
-    </div>
+    </div>
   </section>
+
 </body>
 </html>
